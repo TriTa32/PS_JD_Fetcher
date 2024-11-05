@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Description Fetcher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Job Description Fetcher</h1>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <input type="url" id="jobUrl" placeholder="Paste job URL here..." required>
+                <button id="fetchButton">Fetch Job Details</button>
+            </div>
+
+            <div class="loading-spinner" id="loadingSpinner">
+                <div class="spinner"></div>
+            </div>
+
+            <div class="result-section" id="resultSection">
+                <div class="job-header">
+                    <h2 id="jobTitle">Job Title</h2>
+                    <span id="companyName" class="company-name">Company Name</span>
+                </div>
+                
+                <div class="job-details">
+                    <div class="detail-group">
+                        <h3>Location</h3>
+                        <p id="location">-</p>
+                    </div>
+                    
+                    <div class="detail-group">
+                        <h3>Job Description</h3>
+                        <div id="jobDescription" class="description-content">
+                            Your job description will appear here...
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="error-message" id="errorMessage"></div>
+        </main>
+
+        <footer>
+            <p>Note: LinkedIn.com Only</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
