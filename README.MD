@@ -112,7 +112,3 @@ The server implements a retry mechanism for rate-limited requests:
 ## Contributing
 
 Feel free to submit issues, fork the repository, and create pull requests for any improvements.
-
-## Disclaimer
-
-This tool is for educational purposes only. Please ensure you comply with LinkedIn's terms of service and robots.txt when using this API.
